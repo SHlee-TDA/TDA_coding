@@ -3,10 +3,10 @@
 > 📌 **핵심 Keyword**
 > - **위상수학** : 거리나 좌표계의 개념에 의존하지 않고, 대상의 연결성에 대한 기하학적 특징을 다루는 수학.
 > - **심플리셜 컴플렉스** : 꼭짓점과 변으로 연결성을 표현하는 그래프의 일반화된 개념. 꼭짓점, 변, 삼각형, 정사면체 등으로 고차원적인 연결성을 표현한다.
-> - **필트레이션** : 심플리셜 컴플랙스의 
+> - **필트레이션** : 심플리셜 컴플렉스의 진화과정을 표현한 서브컴플렉스들의 증가하는 배열.
 > 
 
----
+
 
 
 ### §. 1.1.) Graph
@@ -72,7 +72,7 @@
 >세 개의 꼭짓점들의 집합 $K=\left\{a,b,c\right\}$이 있다고 합시다.
 >이때 세 꼭짓점과 그들을 각각을 연결하는 세 개의 변들, 그리고 그 세 변들로 둘러쌓인 삼각형의 모임을 $\mathcal{S}$로 두면 $(K,\mathcal{S})$는 삼각형의 연결성을 표현하는 심플리셜 컴플렉스가 됩니다.
 >이때 삼각형 심플렉스 $\sigma$가 심플리셜 컴플렉스에 포함되므로 $\tau$를 구성하는 변 $\tau$도 심플리셜 컴플렉스의 구성에 포함이 되어야 합니다.
-><figure align = 'center'><img src = 'images/simplicial01.png' width = 200></figure>
+><figure align = 'center'><img src = 'https://github.com/SHlee-TDA/TDA_coding/blob/master/images/simplicial01.png?raw=true' width = 200></figure>
 >
 > 위 그림에서 심플리셜 컴플렉스 $(K,\mathcal{S})$의 심플렉스들의 모임 $\mathcal{S}$는 
 >
@@ -85,13 +85,13 @@
 점을 0차원 선을 1차원으로 둔다면, 면은 2차원 공간을 3차원으로 두는 것은 우리가 일반적으로 *차원*이라는 단어를 생각할 때 떠올리는 관습입니다.
 심플렉스들의 차원은 이와 유사한 대응으로 정의됩니다. 
 
-심플렉스 $\sigma \in \mathcal{S}$가 **$k$-심플렉스**$($k$-simplex)라고 하는 것은 $|\sigma| = k+1$인 경우를 말합니다.
+심플렉스 $\sigma \in \mathcal{S}$가 **$k$-심플렉스**($k$-simplex)라고 하는 것은 $|\sigma| = k+1$인 경우를 말합니다.
 즉, **(하나의 심플렉스를 구성하는데 필요한 꼭짓점들의 수 - 1)** 가 심플렉스의 차원이 됩니다.
 
 0차원인 점을 구성하는 데엔 하나의 점이, 1차원인 선분을 구성하는 데엔 2개의 점이, 2차원인 삼각형을 구성하는 데엔 3개의 점이 필요하다는 점에서 이는 우리의 직관과 상응한다고 볼 수 있습니다.
 다시 말해 꼭짓점은 0-심플렉스이고, 변은 1-심플렉스, 면은 2-심플렉스가 됩니다.
 
-<figure align = 'center'><img src = 'images/simplicial04.png' width = 500></figure>
+<figure align = 'center'><img src = 'https://github.com/SHlee-TDA/TDA_coding/blob/master/images/simplicial04.png?raw=true' width = 500></figure>
 
 
 만약 두 심플렉스가 $\tau \subseteq \sigma$의 관계를 가지게 된다면, 더 작은 simplex $\tau$를 더 큰 simplex $\sigma$의 **면**(face)이라고 부르고, 더 큰 simplex $\sigma$를 더 작은 simplex $\tau$의 **여면**(coface)라고 부릅니다.
@@ -104,7 +104,7 @@
 >이것은 우리의 기존 관습과 일치합니다.
 >유의할 점은, 정사면체를 구성하는 각 변들과 각 꼭짓점들도 정의에 의해 정사면체의 면이라고 불린다는 점입니다.
 > 또한 $\sigma$를 구성하는 각 변들과 꼭짓점들에게 있어서 $\sigma$는 각각에게 여면이 됩니다.
-><figure align = 'center'><img src = 'images/simplicial02.png' width = 200></figure>
+><figure align = 'center'><img src = 'https://github.com/SHlee-TDA/TDA_coding/blob/master/images/simplicial02.png?raw=true' width = 200></figure>
 
 
 
@@ -146,7 +146,7 @@ TDA에서는 이러한 심플리셜 컴플렉스의 진화과정 속에서 연�
 
 <figure align = "center">
     <a href = "https://en.wikipedia.org/wiki/Triangulation_%28topology%29">
-    <img src = 'images/simplicial05.png'/>
+    <img src = 'https://github.com/SHlee-TDA/TDA_coding/blob/master/images/simplicial05.png?raw=true'/>
     </a>
     <figcaption><b>TDA는 필트레이션을 이용해 데이터로부터 심플리셜 컴플렉스의 진화과정을 만들고, 그 과정 중에 연결성분(파란 막대)이나 구멍(점선)의 지속성을 측정한다.
     [이미지 출처 : Figure 1 in Otter, Nina, et al. "A roadmap for the computation of persistent homology." EPJ Data Science 6 (2017)]</b></figcaption>
@@ -159,7 +159,7 @@ TDA에서는 이러한 심플리셜 컴플렉스의 진화과정 속에서 연�
 >  <span style="color:#2ECC71">***Example 1.3) Sub Complex***</span>
 > 
 >Example 1.1에서 아래의 삼각형으로 시각화되는 심플리셜 컴플렉스 $(K,\mathcal{S})$를 정의했었습니다.
-><figure align = 'center'><img src = 'images/simplicial01.png' width = 200></figure>
+><figure align = 'center'><img src = 'https://github.com/SHlee-TDA/TDA_coding/blob/master/images/simplicial01.png?raw=true' width = 200></figure>
 >
 > 이때 $K$의 부분집합 $L = \left\{a,c\right\}$를 생각하고, $L$에 대한 심플렉스들의 모임 $\mathcal{T}$를 
 >$$
@@ -180,7 +180,8 @@ TDA에서는 이러한 심플리셜 컴플렉스의 진화과정 속에서 연�
 >  <span style="color:indianred">***Definition 1.3) Filtration***</span>
 > 
 > 심플리셜 컴플렉스 $K$의 서브컴플렉스들의 증가배열(nested subsequence)
-> $$ \empty = K^0 \subseteq K^1 \subseteq \cdots \subseteq K^m = K$$
+> $$
+\empty = K^0 \subseteq K^1 \subseteq \cdots \subseteq K^m = K$$
 > 을 **필트레이션**(filtration)이라고 부른다.
 > 이때 이러한 배열이 주어진 심플리셜 컴플렉스 $K$를 **필터드 컴플렉스**(filtered complex)라고 부른다. 
 > 인덱스의 일반성을 위해 $K^i = K^m \; (i\geq m)$, $K^i = K^0 \; (i \leq 0)$ 으로 둔다.
@@ -195,9 +196,47 @@ TDA에서는 이러한 심플리셜 컴플렉스의 진화과정 속에서 연�
 > 이때 $K$의 서브컴플렉스 $K$를 아래의 그림과 같이 정의합니다.
 > 즉, $K^1$은 $K$의 한 꼭짓점, $K^2$는 그 꼭짓점을 포함하는 변, $K^3$은 그 변을 포함하는 면, $K^4$는 $K$ 자신으로 정의합니다.
 > 그러면 배열 $\empty = K^0 \subseteq K^1 \subseteq K^2 \subseteq K^3 \subseteq K^4 = K$는 $K$의 필트레이션이 됩니다.
-><figure align = 'center'><img src = 'images/simplicial03.png' width = 400></figure>
+><figure align = 'center'><img src = 'https://github.com/SHlee-TDA/TDA_coding/blob/master/images/simplicial03.png?raw=true' width = 400></figure>
 
-그런데 문맥을 유의깊게 살피신 분이라면 필트레이션은 어떤 심플리셜 컴플렉스가 주어졌을 때, 그 부분집합으로부터 만든다고 했는데 데이터로부터 필트레이션을 만드는 것은 순서가 거꾸로 된 것이 아니냐고 주장할 지 모릅니다.
+
+여기서는 자세히 설명하지는 않겠지만, 데이터로부터 필트레이션을 만드는 대표적인 방법을 하나 소개하도록 하겠습니다.
+데이터가 **포인트클라우드** 타입으로 주어져 있다고 합시다.
+그러면 다음과 같은 알고리즘으로 심플리셜 컴플렉스를 구축할 수 있습니다.
+
+><span style="color:#A569BD">***Remark) 심플리셜 컴플렉스의 구축***</span>
+>
+> 포인트 클라우드 데이터 집합 $K$가 주어졌다고 하자.
+> 거리 파라미터 $\epsilon \in [0,\infty)$에 대하여 다음 알고리즘을 생각하자.
+> 1. 파라미터 $\epsilon$을 선택한다.
+> 2. 두 점 사이의 거리가 $2\epsilon$ 이하가 되면 두 점을 변으로 연결한다. (즉, 각 점을 중심으로 반지름이 $\epsilon$인 원을 그려 두 원이 만나면 변으로 연결한다.)
+> 3. 세 점에 대하여, 각각 두 점 사이의 거리가 $2\epsilon$ 이하가 되면 세 변을 삼각형으로 연결한다. (즉, 세 점이 변으로 서로 연결되어 삼각형을 그리면 그 삼각형을 면으로 채운다.)
+> 
+> 그러면 각 $\epsilon$에 대하여, $K$를 꼭짓점으로 하는 심플리셜 컴플렉스 $K_\epsilon$이 만들어진다.
+> 이러한 심플리셜 컴플렉스를 **비에토리스-립스 컴플렉스**(Vietoris-Rips Complex) 또는 **립스 컴플렉스**라고 부른다.
+> 
+> 이때 충분히 큰 두 파라미터 $\epsilon < \epsilon'$에 대해 $K_{\epsilon} = K_{\epsilon'}$이므로, 가장 큰 심플리셜 컴플렉스 $K$를 선택할 수 있다.
+> 이제 $\epsilon$들의 수열 $0 = \epsilon_0 \leq \epsilon_1 \leq \epsilon_2 \leq \cdots \leq \epsilon_n$을 택하면, 필트레이션 
+>$$
+\empty = K_0 \subseteq K_{\epsilon_1} \subseteq K_{\epsilon_2} \subseteq \cdots \subseteq K_{\epsilon_n} = K$$
+>를 얻는다. 
+> 이를 **비에토리스-립스 필트레이션**(Vietoris-Rips filtration) 또는 **립스 필트레이션**이라고 부른다.
+>
+> <figure align = "center">
+>    <a href = "https://www.geogebra.org/m/ye79r6ws">
+>    <img src = 'images/simplicial.gif'/>
+>    </a>
+>    <figcaption><b>립스 컴플렉스가 만들어지는 과정 [GIF 출처 : GeoGebra (Author : Vaibhav Karve)]</b></figcaption>
+></figure>
+
+TDA에서 가장 먼저 데이터를 처리하는 방법은 데이터 타입에 적절한 필트레이션을 구축하는 것입니다. 
+적절한 필트레이션을 찾은 뒤에는 파라미터가 점점 증가시켜가면서 심플리셜 컴플렉스의 연결관계에가 어떻게 변해가는지 관측합니다.
+이를 위해서 심플리셜 컴플렉스라는 기하학적 대상을 계산이 가능한 대수적 대상으로 대응시키는 과정이 필요합니다.
+이때 등장하는 개념이 **호몰로지**(Homology)입니다.
+
+다음 포스팅에서는 무시무시한 호몰로지에 대해서 다루어보겠습니다.
+
+---
+
 
 
 
