@@ -88,10 +88,10 @@ $$
 >
 > 이제 $k$-컴플렉스들의 집합 $\Sigma_k$에 덧셈을 **두 $k$-컴플렉스를 병렬배치(Juxtaposition)하는 것**이라고 나이브하게 정의해보겠습니다.
 > 예를들어, 두 꼭짓점 $\left\{a\right\} ,\left\{b\right\}\in \Sigma_0$의 덧셈 $\left\{a\right\}+\left\{b\right\}$의 결과는 아래의 그림과 같이 두 개의 점이 병렬배치된 그림으로 시각화할 수 있습니다.
-><figure align = 'center'><img src = 'images\chain_complex01.png' width = 200></figure>
+><figure align = 'center'><img src = 'https://github.com/SHlee-TDA/TDA_coding/blob/master/images/chain_complex01.png?raw=true' width = 200></figure>
 >
 > 유사하게, 두 변 $\left\{a,b\right\} ,\left\{b,c\right\}\in \Sigma_1$의 덧셈 $\left\{a,b\right\} + \left\{b,c\right\}$는 아래의 그림과 같이 두 개의 변이 병렬배치되어 연결된 그림으로 시각화할 수 있습니다.
-> <figure align = 'center'><img src = 'images\chain_complex02.png' width = 200></figure>
+> <figure align = 'center'><img src = 'https://github.com/SHlee-TDA/TDA_coding/blob/master/images/chain_complex02.png?raw=true' width = 200></figure>
 > 
 > 특별히 같은 $k$-심플렉스끼리의 합은 0이 됩니다. 
 > 이 경우에는 같은 심플렉스가 겹치면서 사라진다고 생각하면 좋습니다.
@@ -121,6 +121,7 @@ $$
 ### §. 2.2.) Boundary operator
 
 벡터공간 이야기가 나온 김에 선형대수학의 주요 개념들과 정리 몇 가지를 나열해보겠습니다.
+다음의 개념들에 익숙하다면 이번 포스팅은 정말 쉽게 이해하실 수 있습니다.
 
 ><span style="color:#A569BD">***Remark) 선형대수학 사전***</span>
 > - **Vector Space** : 선형대수학에서 다루는 대수적 구조. 덧셈과 스칼라곱 두 가지 연산이 잘 정의된 공간이다. 
@@ -132,7 +133,7 @@ $$
 
 
  
-이제 심플리셜 컴플렉스를 꼭짓점, 변, 면으로 따로 떼어서 벡터공간 $C_0(K), C_1(K), C_2(K), \ldots$을 만들었습니다.
+심플리셜 컴플렉스를 꼭짓점, 변, 면으로 따로 떼어서 벡터공간 $C_0(K), C_1(K), C_2(K), \ldots$을 만들었습니다.
 이들을 잘 분석하면 심플리셜 컴플렉스에 대한 유용한 정보를 많이 알 수 있을 것입니다.
 
 선형대수학에서 벡터공간을 만나면 가장 먼저 **기저와 차원**을 확인했었습니다.
@@ -194,7 +195,7 @@ $에 의해 결정된다고 하자.
 >$\sigma$는 세 변 $[v_0,v_1], [v_1,v_2],[v_2,v_0]$로 둘러쌓여 있습니다.
 >따라서 바운더리 오퍼레이터 $\partial_2$에 대한 $\sigma$의 이미지는 $[v_0,v_1] + [v_1,v_2] + [v_1,v_2] \in C_1$입니다.
 > 아래의 그림을 보시면 시각적으로 바운더리 오퍼레이터가 어떤 작용을 하는지 관찰할 수 있습니다.
-><figure align = 'center'><img src = 'images/chain_complex03.png'></figure>
+><figure align = 'center'><img src = 'https://github.com/SHlee-TDA/TDA_coding/blob/master/images/chain_complex03.png?raw=true'></figure>
 > 
 
 
@@ -203,9 +204,9 @@ $에 의해 결정된다고 하자.
 이러한 나열을 **체인 컴플렉스**(Chain Complex)라고 합니다.
 
 지금까지의 내용을 정리해봅시다.
-1. 데이터의 기하학적 특징을 관찰하기 위해 심플리셜 컴플렉스 형태로 표현했습니다.
-2. 심플리셜 컴플렉스를 분석하기 위해 각 차원별 컴플렉스로 분리해 체인모듈이라는 벡터공간을 생각했습니다.
-3. 체인모듈들을 바운더리 오퍼레이터로 연결시켰습니다.
+> 1. 데이터의 기하학적 특징을 관찰하기 위해 심플리셜 컴플렉스 형태로 표현했습니다.
+> 2. 심플리셜 컴플렉스를 분석하기 위해 각 차원별 컴플렉스로 분리해 체인모듈이라는 벡터공간을 생각했습니다.
+> 3. 체인모듈들을 바운더리 오퍼레이터로 연결시켰습니다.
 
 이제 남은 일은 이 관계로부터 구체적으로 기하학적 특징을 계산해내기만 하면 됩니다.
 그것이 다음 섹션에서 다룰 **호몰로지**(Homology)입니다.
@@ -224,7 +225,7 @@ $에 의해 결정된다고 하자.
 
 
 <figure align = "center">
-   <img src = 'https://img.livescore.co.kr/data/editor/2103/8e703a59a514ebee2b50c77c80b2fed0.JPG'/ width = 200>
+   <img src = 'https://image.fmkorea.com/files/attach/new/20210115/486616/171939074/3328814988/9659bdd790b73535cb4d804a3120f469.jpeg'/ width = 100>
     </a>
     <figcaption><b>그래서 교수님들이 선형대수학을 그렇게 공부하라고 하셨었구나?!</b></figcaption>
 </figure>
@@ -301,7 +302,7 @@ $에 의해 결정된다고 하자.
 아래와 같은 심플리셜 컴플렉스가 있다고 합시다.
 
 <figure align = 'center'>
-<img src = 'images/chain_complex04.png' width = 200>
+<img src = 'https://github.com/SHlee-TDA/TDA_coding/blob/master/images/chain_complex04.png?raw=true' width = 200>
 </figure>
 
 
@@ -347,7 +348,7 @@ $에 의해 결정된다고 하자.
 >  <span style="color:#2ECC71">***Example 2.4) Homology***</span>
 >
 ><figure align = 'center'>
-><img src = 'images/homology.png' width = 200>
+><img src = 'https://github.com/SHlee-TDA/TDA_coding/blob/master/images/homology.png?raw=true' width = 200>
 ></figure>
 >
 > 위 그림과 같이 시각화되는 심플리셜 컴플렉스 $K$가 있다고 합시다. 
