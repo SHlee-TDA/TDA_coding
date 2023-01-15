@@ -23,9 +23,9 @@ class PointCloud():
             s = np.random.uniform(0, 2*np.pi, self.n_points)
         
             # parametric equation of sphere
-            sample[:, 0] = 4*np.cos(s)*np.sin(t)   # x
-            sample[:, 1] = 4*np.sin(s)*np.sin(t)   # y
-            sample[:, 2] = 4*np.cos(t)             # z
+            sample[:, 0] = np.cos(s)*np.sin(t)   # x
+            sample[:, 1] = np.sin(s)*np.sin(t)   # y
+            sample[:, 2] = np.cos(t)             # z
 
             # random noise
             noise = np.random.normal(0, self.noise, size=sample.shape)
@@ -49,9 +49,9 @@ class PointCloud():
             s = np.random.uniform(0, 2*np.pi, self.n_points)
         
             # parametric equation of sphere
-            sample[:, 0] = (2*np.cos(s)+4)*np.cos(t)   # x
-            sample[:, 1] = (2*np.cos(s)+4)*np.sin(t)   # y
-            sample[:, 2] = 2*np.sin(s)             # z
+            sample[:, 0] = (1*np.cos(s)+2)*np.cos(t)   # x
+            sample[:, 1] = (1*np.cos(s)+2)*np.sin(t)   # y
+            sample[:, 2] = 1*np.sin(s)             # z
 
             # random noise
             noise = np.random.normal(0, self.noise, size=sample.shape)
